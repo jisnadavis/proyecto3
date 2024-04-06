@@ -1,0 +1,18 @@
+.footerdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--ppk-gap-m);
+  width: 100svw !important;
+  align-items: center;
+}
+.social-icon {
+  width: 50px;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 100svw;
+  flex-wrap: wrap;
+  padding: 10px;
+}

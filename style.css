@@ -50,7 +50,7 @@ li {
 }
 .sectioncards {
   width: 100svw;
-  margin: var(--ppk-margin-s);
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -60,4 +60,25 @@ li {
 }
 body {
   overflow-x: hidden;
+}
+footer {
+  margin-top: 450px;
+  width: 100svw;
+  height: 25svh;
+  background-color: whitesmoke;
+}
+@media (max-width: 864px) {
+  .sectioncards {
+    top: 50svh;
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    margin-top: 550px;
+  }
+}
+@media (max-width: 460px) {
+  .sectioncards {
+    left: 10px;
+  }
 }

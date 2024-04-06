@@ -3,9 +3,16 @@ import { getphotosbysearch } from '../photos/photo'
 import './navbar.css'
 export const formserach = document.createElement('form')
 export const searchinput = document.createElement('input')
-export const buscarbutton = document.createElement('button')
+export const buscarbutton = createbutton({
+  texto: 'buscar',
+  bgcolor: 'red',
+  fontcolor: 'white'
+})
+
+const accesskey = 'Yun-jYwr4VG2r_LbRRMVX9qJgotV8WFe2k0eVA-lCrE'
 export const createnavbar = () => {
   const navbar = document.createElement('nav')
+  navbar.className = 'navbar'
   const navcontent = document.createElement('div')
   navcontent.className = 'navcontent'
   const inciobutton = createbutton({
@@ -28,31 +35,36 @@ export const createnavbar = () => {
   navcontent.appendChild(crear)
   const searchdiv = document.createElement('div')
   searchdiv.className = 'serchdiv'
-  const formserach = document.createElement('form')
   formserach.className = 'formserch'
   formserach.action = ''
   const searchimg = document.createElement('img')
   searchimg.className = 'searchimg'
   searchimg.src = './assets/searchimg.png'
   searchdiv.appendChild(searchimg)
-  const searchinput = document.createElement('input')
 
-  searchinput.placeholder = 'buscar'
+  searchinput.placeholder = '  que queries buscar'
 
   searchinput.className = 'searchinput'
-  const buscarbutton = createbutton({
-    texto: 'buscar',
-    bgcolor: 'red',
-    fontcolor: 'white'
-  })
+
   buscarbutton.classList.add('buscarbutton')
   searchdiv.appendChild(formserach)
 
   formserach.appendChild(searchinput)
   formserach.appendChild(buscarbutton)
 
+  const menubutton = document.createElement('button')
+
+  menubutton.className = 'menubutton'
+  const menuimg = document.createElement('img')
+  menuimg.className = 'menuimg'
+  menuimg.src = './assets/menu.png'
+
+  menubutton.appendChild(menuimg)
+  navbar.appendChild(menubutton)
+
   const divindex = document.createElement('div')
   divindex.className = 'divindex'
+
   const notificationlink = document.createElement('a')
   const notificationimg = document.createElement('img')
   notificationimg.src = './assets/campana.png'
@@ -75,6 +87,10 @@ export const createnavbar = () => {
   navbar.appendChild(navcontent)
   navbar.appendChild(searchdiv)
   navbar.appendChild(divindex)
+  menubutton.addEventListener('click', () => {
+    console.log('button clicked')
+    divindex.classList.toggle('menu-vertical')
+  })
 
   return navbar
 }

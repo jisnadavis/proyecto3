@@ -6,6 +6,8 @@
   border-radius: 30px;
   gap: 10px;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .articleimg img {
   width: 300px;
@@ -15,7 +17,8 @@
 .download {
   width: 50px;
   height: 30px;
-  left: 200px;
+  left: 300px;
+  top: 90px;
   position: absolute;
   border: none;
   visibility: hidden;
@@ -28,6 +31,8 @@
 .lovebutton {
   visibility: hidden;
   position: absolute;
+  left: 100px;
+  top: 90px;
 }
 .articleimg :hover {
   transform: scale(1.1);
