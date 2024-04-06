@@ -8,7 +8,7 @@ nav {
   gap: var(--ppk-gap-xs);
   justify-content: space-around;
   width: 300px;
-  min-width: 300px;
+  min-width: 320px;
 }
 .serchdiv {
   display: flex;
@@ -158,10 +158,10 @@ nav {
     left: 100px;
   }
   .menubutton {
-    left: 400px;
+    left: 420px;
   }
   .menu-vertical {
-    left: 420px;
+    left: 440px;
   }
 }
 @media (max-width: 600px) {
@@ -181,18 +181,18 @@ nav {
     left: 100px;
   }
   .menubutton {
-    left: 300px;
+    left: 320px;
   }
   .menu-vertical {
-    left: 320px;
+    left: 340px;
   }
 }
 @media (max-width: 450px) {
   .serchdiv {
-    left: -250px;
+    left: -290px;
   }
   .navcontent > button {
-    left: -50px;
+    left: -80px;
   }
   nav {
     position: relative;
@@ -204,7 +204,7 @@ nav {
     left: 120px;
   }
   .menubutton {
-    left: 0px;
+    left: -10px;
   }
   .menu-vertical {
     left: 0px;
