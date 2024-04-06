@@ -52,7 +52,7 @@ nav {
   display: flex;
   gap: 20px;
   position: relative;
-  left: 90px;
+  left: 50px;
 }
 .menubutton {
   width: 60px;
@@ -185,5 +185,28 @@ nav {
   }
   .menu-vertical {
     left: 320px;
+  }
+}
+@media (max-width: 450px) {
+  .serchdiv {
+    left: -250px;
+  }
+  .navcontent > button {
+    left: -50px;
+  }
+  nav {
+    position: relative;
+    top: -50px;
+    left: -10px;
+  }
+  .navcontent {
+    position: relative;
+    left: 120px;
+  }
+  .menubutton {
+    left: 0px;
+  }
+  .menu-vertical {
+    left: 0px;
   }
 }
