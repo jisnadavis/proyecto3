@@ -1,24 +1,29 @@
+import { createheader } from './public/components/header/header'
+import { createnavbar } from './public/components/navbar/navbar'
+import {
+  getphotosbysearch,
+  getrandomphotos
+} from './public/components/photos/photo'
+import {
+  formserach,
+  buscarbutton,
+  searchinput
+} from './public/components/navbar/navbar'
 import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+const divapp = document.querySelector('#app')
+const header = createheader()
+divapp.appendChild(header)
+const accesskey = 'Yun-jYwr4VG2r_LbRRMVX9qJgotV8WFe2k0eVA-lCrE'
+const sectioncards = document.createElement('section')
+sectioncards.classList.add('sectioncards')
+divapp.appendChild(sectioncards)
+getrandomphotos(accesskey, sectioncards, 50)
+buscarbutton.addEventListener('click', (event) => {
+  event.preventDefault()
+  console.log('button clicked')
+  const keyword = searchinput.value.trim()
+  console.log(keyword)
+  if (keyword !== '') {
+    getphotosbysearch(accesskey, sectioncards, keyword)
+  }
+})

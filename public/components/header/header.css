@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  width: 100%;
+  padding: var(--ppk-padding-m);
+  height: 15svh;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  background-color: whitesmoke;
+}
+.logocontainer {
+  width: 100px;
+  height: 50px;
+}
+.logoimage {
+  object-fit: fill;
+  width: 75px;
+  height: 50px;
+  border-radius: 100%;
+}

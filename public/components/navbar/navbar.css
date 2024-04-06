@@ -1,0 +1,44 @@
+nav {
+  display: flex;
+}
+.navcontent {
+  display: flex;
+  gap: var(--ppk-gap-xs);
+  justify-content: space-evenly;
+  width: 300px;
+}
+.serchdiv {
+  display: flex;
+  width: 700px;
+  background-color: rgb(219, 219, 219);
+  border-radius: 30px;
+  justify-content: space-evenly;
+  gap: 20px !important;
+}
+.searchimg {
+  width: 30px;
+  height: 40px;
+  position: relative;
+  top: 5px;
+  left: 35px;
+}
+.notificationimg {
+  width: 30px;
+  position: relative;
+  top: 15px;
+}
+.searchinput {
+  width: 500px;
+  height: 40px;
+  border-radius: 30px;
+  border: none;
+}
+.serchdiv button {
+  height: 40px;
+  position: relative;
+  top: 5px;
+}
+.divindex {
+  display: flex;
+  gap: 20px;
+}
