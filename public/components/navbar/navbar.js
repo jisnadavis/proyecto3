@@ -88,7 +88,6 @@ export const createnavbar = () => {
   navbar.appendChild(searchdiv)
   navbar.appendChild(divindex)
   menubutton.addEventListener('click', () => {
-    console.log('button clicked')
     divindex.classList.toggle('menu-vertical')
   })
 

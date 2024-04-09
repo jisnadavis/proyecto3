@@ -1,7 +1,7 @@
 nav {
   display: flex;
   position: relative;
-  left: -60px;
+  left: -30px;
 }
 .navcontent {
   display: flex;
@@ -68,145 +68,86 @@ nav {
   object-fit: contain !important;
   width: 50px;
 }
-
-@media (max-width: 1356px) {
+@media (max-width: 1324px) {
+  .divindex {
+    position: relative;
+    left: -10px;
+  }
+}
+@media (max-width: 1000px) {
   .divindex {
     display: none;
   }
-  .menubutton {
-    display: block;
+  .serchdiv {
+    width: 400px;
+  }
+  .searchinput {
+    width: 200px;
   }
   .menu-vertical {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 300px;
     position: absolute;
-    top: 50px;
-    left: 840px;
+    left: 760px;
+
+    top: 40px;
     overflow: hidden;
   }
-}
-@media (max-width: 1048px) {
-  .serchdiv {
-    width: 300px;
-  }
-  .serchdiv button {
-    width: 80px;
-  }
-  .searchinput {
-    width: 150px;
-  }
-  .searchimg {
-    left: 20px;
-  }
-  .navcontent button {
-    width: 80px;
-  }
-  .menu-vertical {
-    left: 640px;
-  }
-}
-@media (max-width: 864px) {
-  .serchdiv {
-    position: relative;
-    top: 80px;
-    left: -160px;
-  }
-  .navcontent > button {
-    position: relative;
-    left: 200px;
-  }
-}
-@media (max-width: 800px) {
   .menubutton {
-    left: 600px;
+    display: block;
   }
-  .menu-vertical {
-    left: 620px;
-  }
-  .navcontent > button {
-    left: 200px;
-  }
-  .navcontent {
+  .navbar {
     position: relative;
-    left: -10px;
-  }
-}
-@media (max-width: 772px) {
-  .serchdiv {
     left: -90px;
   }
-  .navcontent > button {
-    left: 150px;
-  }
 }
-@media (max-width: 748px) {
+@media (max-width: 900px) {
   .serchdiv {
-    left: -190px;
-  }
-  .navcontent > button {
-    left: 0px;
-  }
-  nav {
-    position: relative;
-    top: -50px;
-    left: 100px;
-  }
-  .navcontent {
-    position: relative;
-    left: 100px;
+    position: absolute;
+    top: 80px !important;
   }
   .menubutton {
+    position: absolute;
+    left: 400px;
+  }
+  .menu-vertical {
+    position: absolute;
     left: 420px;
   }
-  .menu-vertical {
-    left: 440px;
-  }
 }
-@media (max-width: 600px) {
-  .serchdiv {
-    left: -250px;
-  }
-  .navcontent > button {
-    left: -90px;
-  }
-  nav {
-    position: relative;
-    top: -50px;
-    left: 0px;
-  }
-  .navcontent {
-    position: relative;
-    left: 100px;
+@media (max-width: 528px) {
+  .navbar {
+    position: absolute;
+    left: 50px;
   }
   .menubutton {
-    left: 320px;
+    display: none;
   }
   .menu-vertical {
-    left: 340px;
+    display: none;
+  }
+  .serchdiv {
+    position: absolute;
+    left: 0px !important;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 470px) {
   .serchdiv {
-    left: -290px;
+    width: 350px;
+    align-content: center;
   }
-  .navcontent > button {
-    left: -80px;
-  }
-  nav {
+  .buscarbutton {
+    width: 80px;
+    font-size: 10px;
     position: relative;
-    top: -50px;
-    left: -10px;
+    top: 0px !important;
   }
-  .navcontent {
-    position: relative;
-    left: 120px;
+  .searchimg {
+    display: none;
   }
-  .menubutton {
-    left: -10px;
-  }
-  .menu-vertical {
-    left: 0px;
+}
+@media (max-width: 413px) {
+  .serchdiv {
+    width: 250px;
   }
 }

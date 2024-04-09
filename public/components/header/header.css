@@ -4,7 +4,7 @@ header {
   padding: var(--ppk-padding-l);
   height: 15svh;
   justify-content: space-around;
-  gap: 10px;
+  gap: 30px;
   flex-wrap: wrap;
   position: fixed;
   top: 0px;
@@ -22,22 +22,11 @@ header {
   height: 50px;
   border-radius: 100%;
 }
-@media (max-width: 864px) {
+@media (max-width: 1000px) {
   header {
-    height: 40svh;
+    height: 20svh;
   }
   .logocontainer {
-    position: relative;
-    left: 150px;
-  }
-}
-@media (max-width: 800px) {
-  .logocontainer {
-    left: 80px;
-  }
-}
-@media (max-width: 748px) {
-  .logocontainer {
-    left: 50px;
+    display: none;
   }
 }

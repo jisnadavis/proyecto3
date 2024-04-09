@@ -35,11 +35,6 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.dark {
-  background-color: var(--primary);
-  color: var(--color-background);
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -49,6 +44,7 @@ li {
   list-style-type: none;
 }
 .sectioncards {
+  margin-top: 20px;
   width: 100svw;
   justify-content: center;
   display: flex;
@@ -67,9 +63,9 @@ footer {
   height: 25svh;
   background-color: whitesmoke;
 }
-@media (max-width: 864px) {
-  .sectioncards {
-    top: 50svh;
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
 }
 @media (max-width: 800px) {
