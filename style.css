@@ -44,7 +44,7 @@ li {
   list-style-type: none;
 }
 .sectioncards {
-  margin-top: 20px;
+  margin-top: 50px;
   width: 100svw;
   justify-content: center;
   display: flex;
@@ -65,7 +65,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-x: hidden;
   }
 }
 @media (max-width: 800px) {
