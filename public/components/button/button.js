@@ -7,14 +7,17 @@ export const createbutton = ({ texto, bgcolor, fontcolor }) => {
   button.textContent = texto
   return button
 }
+
 export const createlovebutton = () => {
   const lovebutton = document.createElement('button')
-  const loveimg = document.createElement('img')
-  loveimg.src = './assets/Love.png'
-  lovebutton.appendChild(loveimg)
   lovebutton.className = 'lovebutton'
-  lovebutton.addEventListener('click', function () {
-    this.classList.toggle('changecolor')
+  lovebutton.addEventListener('click', () => {
+    console.log('clickes')
+    if (lovebutton.style.backgroundColor === 'red') {
+      lovebutton.style.backgroundColor = 'white'
+    } else {
+      lovebutton.style.backgroundColor = 'red'
+    }
   })
   return lovebutton
 }

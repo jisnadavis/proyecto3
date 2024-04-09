@@ -1,17 +1,12 @@
 import './footer.css'
 
 export const createfooter = () => {
-  // Create footer element
-
-  // Create div for footer content
   const footerdiv = document.createElement('div')
   footerdiv.className = 'footerdiv'
 
-  // Create heading
   const h1 = document.createElement('h1')
   h1.textContent = 'Follow us'
 
-  // Create div for social media icons
   const socialIconsDiv = document.createElement('div')
   socialIconsDiv.className = 'social-icons'
 

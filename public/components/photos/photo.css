@@ -17,7 +17,7 @@
 .download {
   width: 50px;
   height: 30px;
-  left: 300px;
+  left: 280px;
   top: 90px;
   position: absolute;
   border: none;
@@ -29,16 +29,20 @@
   height: 30px !important;
 }
 .lovebutton {
-  visibility: hidden;
+  display: none;
   position: absolute;
-  left: 100px;
+  left: 120px;
   top: 90px;
+  border-radius: 10px;
+}
+.lovebutton img {
+  object-fit: contain;
 }
 .articleimg :hover {
   transform: scale(1.1);
 }
 .articleimg:hover .lovebutton {
-  visibility: visible;
+  display: block;
 }
 .articleimg:hover .download {
   visibility: visible;

@@ -10,7 +10,7 @@ import {
   searchinput
 } from './public/components/navbar/navbar'
 import './style.css'
-import { createfooter } from './public/components/footer/footer'
+import { createfooter } from './public/components/header/footer/footer'
 const divapp = document.querySelector('#app')
 const header = createheader()
 divapp.appendChild(header)
@@ -27,7 +27,6 @@ buscarbutton.addEventListener('click', (event) => {
     getphotosbysearch(accesskey, sectioncards, keyword)
   }
 })
-
 const footer = document.createElement('footer')
 const footerelement = createfooter()
 footer.appendChild(footerelement)

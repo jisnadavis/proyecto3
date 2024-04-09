@@ -68,6 +68,7 @@ nav {
   object-fit: contain !important;
   width: 50px;
 }
+
 @media (max-width: 1324px) {
   .divindex {
     position: relative;
